@@ -1,0 +1,452 @@
+/* Design af navigationsbar */
+.logo{
+    width: 12%;
+    margin-left: 30px;
+    position: fixed;
+ 
+}
+
+.navbar {
+    background: transparent;
+    display: flex;
+
+}
+
+
+
+nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    border-radius: 50px;
+    padding: 20px;
+ 
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+   
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 13px 40px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500px;
+    cursor: pointer;
+    color: #9eb88c;
+    font-family: "civane-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    
+}
+
+nav ul li a{
+    color: #9eb88c;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color:#799068;
+}
+
+nav ul li:hover{
+    color:#799068;
+}
+
+/* Design af dropdown menu */
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-family: "civane-normal", sans-serif;
+    margin-top: 28px;
+    margin-left: 90px;
+    
+    cursor: pointer;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #9eb88c;
+    font-size: 18px;
+    font-family: "civane-normal", sans-serif;
+    padding: 10px -100px;
+    margin-left: -20px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    cursor: pointer;
+  }
+  
+  .dropdown .dropbtn:hover{
+    color: #799068;
+  }
+
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-family: "civane-normal", sans-serif;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: #9eb88c;
+    font-family: "civane-normal", sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #799068;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Design af burgermenu */
+  
+ .checkbtn{
+    font-size: 30px;
+    color: #799068;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+ }
+
+ #check{
+    display: none;
+ }
+
+ .checkbtn{
+    font-size: 30px;
+    color: #9eb88c;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+ }
+
+ @media (max-width: 1024px) {
+    nav ul li a{
+        font-size: 16px;
+        
+    }
+
+    .logo {
+        /* font-size: 100px; */
+        height: auto;
+        width: 15%;
+        
+    }
+    .checkbtn{
+        display: block;
+    }
+
+    .overlay-text {
+        display: none;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+       top: 80px;
+       left: 0;
+       text-align: center;
+       background: white;
+       
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    ul{
+        left: 100%;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+        top: 100px;
+    }
+
+    nav ul li{
+        margin: 50px 0;
+        line-height: 5px;
+        
+    }
+
+    nav ul a{
+        text-decoration: none;
+    }
+
+ }
+
+ /* Design af kontekst */
+
+h1{
+    margin-top: 250px;
+   margin-left: 280px;
+    font-family: "civane-normal", sans-serif;
+    color: #799068;
+    font-size:40px;
+}
+
+h2{
+    text-align: center;
+    font-family: "civane-normal", sans-serif;
+    font-size: 50px;
+    color: #9eb88c;
+}
+
+.p1{
+    font-family: "civane-normal", sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 25px;
+    color: #799068;
+}
+
+.p2{
+    font-family: "civane-normal", sans-serif;
+    color: #799068;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Responsivt design til Iphone 12 Pro */
+@media screen and (min-width: 390px) {
+    h1 {
+        margin-top: 120px; /* Ændret margin for mobilvisning */
+        margin-left: 10px; /* Ændret margin for mobilvisning */
+        font-family: "civane-normal", sans-serif;
+        color: #799068;
+        font-size: 30px; /* Mindre skriftstørrelse for mobilvisning */
+      }
+      
+      h2 {
+        text-align: center;
+        font-family: "civane-normal", sans-serif;
+        font-size: 40px; /* Mindre skriftstørrelse for mobilvisning */
+        color: #9eb88c;
+      }
+      
+      .p1 {
+        font-family: "civane-normal", sans-serif;
+        margin-left: 10px; /* Ændret margin for mobilvisning */
+        margin-right: 10px; /* Ændret margin for mobilvisning */
+        font-size: 20px; /* Mindre skriftstørrelse for mobilvisning */
+        color: #799068;
+      }
+      
+      .p2 {
+        font-family: "civane-normal", sans-serif;
+        color: #799068;
+        font-size: 16px; /* Mindre skriftstørrelse for mobilvisning */
+        margin-left: 10px; /* Ændret margin for mobilvisning */
+        margin-right: 10px; /* Ændret margin for mobilvisning */
+      }
+      
+      @media screen and (min-width: 600px) {
+        /* Medieforespørgsel for skærmbredder større end 600px */
+        h1 {
+          margin-top: 250px;
+          margin-left: 280px;
+          font-size: 40px;
+        }
+      
+        h2 {
+          font-size: 50px;
+        }
+      
+        .p1 {
+          margin-left: 150px;
+          margin-right: 150px;
+          font-size: 25px;
+        }
+      
+        .p2 {
+          font-size: 20px;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+
+}
+
+
+  /* Design af footer */
+
+  .footer{
+    margin-top: -80px;
+        width: 70%;
+        padding: 100px 15%;
+        background: white;
+        color: #799068;
+        display: flex;
+        font-family: "civane-normal", sans-serif;
+      
+    }
+    
+    .footer div{
+        text-align: center;
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    .col-2{
+        flex-grow: 2;
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    .footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    }
+    
+    .col-1 a{
+        display: block;
+        text-decoration: none;
+        color: #799068;
+        margin-bottom: 10px;
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    form input{
+        width: 400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+        border: none;
+        background-color: #9eb88c;
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    form button{
+        background: transparent;
+        border: 2px solid #799068;
+        color: #799068;
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-size: 15px;
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    
+    .social-icons{
+        margin-top: 30px;
+    }
+    
+    .social-icons i{
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+  
+
+/* Responsiv footer */
+@media screen and (max-width: 844px) {
+    .footer {
+        margin-top: -80px;
+        width: 100%;
+        padding: 50px 5%; /* Mindre padding for mindre skærmstørrelser */
+        background: white;
+        color: #799068;
+        display: flex;
+        flex-direction: column; /* Ændret retningen for mindre skærme */
+        align-items: center; /* Centrer elementer på mindre skærme */
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    .footer div {
+        text-align: center;
+        font-family: "civane-normal", sans-serif;
+        margin-bottom: 20px; /* Juster efter behov */
+    }
+    
+    .col-2 {
+        flex-grow: 1; /* Ændret for at tage op mindre plads på mindre skærme */
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    .footer div h3 {
+        font-weight: 300;
+        margin-bottom: 15px; /* Juster efter behov */
+        letter-spacing: 1px;
+    }
+    
+    .col-1 a {
+        display: block;
+        text-decoration: none;
+        color: #799068;
+        margin-bottom: 10px;
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    form input {
+        width: 100%; /* Fuldt bredde for mindre skærme */
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px; /* Mindre afstand for mindre skærme */
+        outline: none;
+        border: none;
+        background-color: #9eb88c;
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    form button {
+        width: 100%; /* Fuldt bredde for mindre skærme */
+        background: transparent;
+        border: 2px solid #799068;
+        color: #799068;
+        border-radius: 30px;
+        padding: 10px 0; /* Mindre padding for mindre skærme */
+        font-size: 15px;
+        font-family: "civane-normal", sans-serif;
+    }
+    
+    .social-icons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center; /* Centrer ikonerne på mindre skærme */
+    }
+    
+    .social-icons i {
+        font-size: 22px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    }
